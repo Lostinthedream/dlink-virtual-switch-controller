@@ -32,8 +32,8 @@ preferences {
     section("Camera") {
         input("camera", "capability.imageCapture", title: "Select Camera:", description: "NOTE: Currently only compatable with D-Link Devices made by BLebson")	
         input("commandOn","enum", title: "Command sent when on:", description: "Please be sure your camera supports your selected command.", required:false, 
-              options: [["motionOn": "Motion On"], 
-                        ["motionOff": "Motion Off"], 
+              options: [["On": "Motion On"], 
+                        ["Off": "Motion Off"], 
                         ["pirOn": "PIR Sensor On"], 
                         ["pirOff": "PIR Sensor Off"], 
                         ["nvOn": "Night Vision On"], 
@@ -50,8 +50,8 @@ preferences {
                         ["presetTwo": "Move to Preset Two"], 
                         ["presetThree": "Move to Preset Three"]])
         input("commandOff","enum", title: "Command sent when off:", description: "Please be sure your camera supports your selected command.", required:false, 
-              options: [["motionOn": "Motion On"], 
-                        ["motionOff": "Motion Off"], 
+              options: [["On": "Motion On"], 
+                        ["Off": "Motion Off"], 
                         ["pirOn": "PIR Sensor On"], 
                         ["pirOff": "PIR Sensor Off"], 
                         ["nvOn": "Night Vision On"], 
